@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-6">
+        <div class="">
+          <div class="1">
+            <input type="text" id="write" placeholder="First Name" />
+            <button id="button">discover</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 bg-danger">
+        <p id="see">see...</p>
+      </div>
+    </div>
+
+    <script>
+      const button = document.getElementById("button");
+      const write = document.getElementById("write");
+      const see = document.getElementById("see");
+
+      function display(inputName) {
+        see.innerText = inputName;
+      }
+
+      button.addEventListener("click", () => {
+        display(write.value);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get textbox value</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+
+  <style>
+    section {
+      height: 100vh;
+      color: white;
+    }
+
+    .form {
+      box-shadow: 2px 3px 5px gray;
+      padding: 30px;
+    }
+
+    .dem {
+      align-items: center;
+      height: 100vh;
+    }
+
+    .dem input {
+      border: 1px solid rgb(156, 152, 152);
+      border-radius: 10px;
+    }
+
+    .btn1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .btn1 button {
+      border: 0;
+      background-image: linear-gradient(rgb(155, 3, 155), rgb(0, 81, 255));
+      border-radius: 25px;
+      padding: 10px;
+    }
+  </style>
+
+  <body>
+    <section>
+      <div class="d-flex container dem w-100">
+        <div class="">
+          <form action="" class="bg-white form">
+            <div class="d-flex gap-5">
+              <div class="">
+                <input type="text" id="userName" />
+                <button id="button">
+                  See everything you have been writing
+                </button>
+
+                <!-- <input
+                  type="text"
+                  required
+                  placeholder="Second name"
+                  class="mt-5 p-3"
+                /><br />
+                <input
+                  type="text"
+                  required
+                  placeholder="Middle name"
+                  class="mt-5 p-3"
+                /><br />
+                <input
+                  type="email"
+                  required
+                  placeholder="tobeblast06@gmail.com"
+                  class="mt-5 p-3"
+                /> -->
+              </div>
+              <!-- <div class="">
+                <input
+                  type="number"
+                  required
+                  placeholder="Enter aworking phone number"
+                  class="p-3"
+                /><br />
+                <input
+                  type="password"
+                  placeholder="Enter a strong password"
+                  class="mt-5 p-3"
+                  required
+                /><br />
+                <input
+                  type="password"
+                  placeholder="Confarm password"
+                  class="mt-5 p-3"
+                  required
+                /><br />
+                <input
+                  type="date"
+                  required
+                  placeholder="input a date"
+                  class="mt-5 p-3"
+                />
+              </div> -->
+            </div>
+            <!-- <div class="btn1"></div> -->
+          </form>
+        </div>
+        <div class="">
+          <p id="everyThing" class="text-black">show name ...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="row">
+        <div class="col-6">
+          <input type="text" id="userName" />
+          <button id="button">Show Username</button>
+        </div>
+        <div class="col-6 bg-danger vh-100">
+          <p id="name" class="text-light">Show name...</p>
+        </div>
+      </div> -->
+
+    <script>
+      // const button = document.getElementById("button");
+      // const userName = document.getElementById("userName");
+      // const name = document.getElementById("name");
+
+      // function showName(inputName) {
+      //   name.innerText = inputName;
+      // }
+
+      // button.addEventListener("click", () => {
+      //   showName(userName.value);
+      // });
+
+      const button = document.getElementById("button");
+      const userName = document.getElementById("userName");
+      const everyThing = document.getElementById("everyThing");
+
+      function showName(val) {
+        console.log("hello");
+      }
+
+      button.addEventListener("click", () => {
+        showName();
+      });
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
